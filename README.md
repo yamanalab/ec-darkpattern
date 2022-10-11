@@ -14,7 +14,7 @@ For more information, please check our [Paper]()
 - **`dataset/ `** : [dataset.tsv]() in this directory is the dataset for text-based dark patterns automatic detection on online shopping sites. 
 - **`darkpattern-auto-detection-classical/`** : Experimental code of text-based dark patterns automatic detection using classical NLP methods.
 - **`darkpattern-auto-detection-deeplearning/ `** : Experimental code of text-based dark patterns automatic detection using transformer-based pre-trained language models.
-- **`scraping-code/`** : Code for collecting "not dark pattern texts" in the dataset.
+- **`scraping/`** : Code for collecting "not dark pattern texts" in the dataset.
 
 ## Citation
 
