@@ -1,0 +1,60 @@
+{
+  "name": "ts-starter",
+  "version": "1.0.0",
+  "description": "typescriptプロジェクトのオリジナル初期設定",
+  "scripts": {
+    "dev": "ts-node src/index.ts",
+    "scraping": "ts-node src/crawl.ts",
+    "gen:tsv": "ts-node src/generate-tsv.ts",
+    "dev:watch": "ts-node-dev --respawn src/index.ts",
+    "build": "tsc -p .",
+    "clean": "rm -rf dist",
+    "format": "prettier --write src/**/*.ts",
+    "lint": "eslint --fix src/**/*.ts",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YadaYuki/ts-starter.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YadaYuki/ts-starter/issues"
+  },
+  "homepage": "https://github.com/YadaYuki/ts-starter#readme",
+  "devDependencies": {
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-typescript": "^7.16.7",
+    "@types/axios": "^0.14.0",
+    "@types/cheerio": "^0.22.31",
+    "@types/jest": "^27.4.1",
+    "@types/jsdom": "^16.2.14",
+    "@types/json2csv": "^5.0.3",
+    "@types/node": "^16.4.0",
+    "@types/puppeteer-core": "^5.4.0",
+    "@types/tunnel": "^0.0.3",
+    "@typescript-eslint/eslint-plugin": "^4.28.4",
+    "@typescript-eslint/parser": "^4.28.4",
+    "eslint": "^7.31.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "jest": "^27.5.1",
+    "prettier": "^2.3.2",
+    "ts-node": "^10.1.0",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.3.5"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "cheerio": "^1.0.0-rc.10",
+    "csv": "^6.0.5",
+    "date-fns": "^2.28.0",
+    "dotenv": "^16.0.1",
+    "jsdom": "^19.0.0",
+    "json2csv": "^5.0.7",
+    "puppeteer": "^13.5.2",
+    "tunnel": "^0.0.6"
+  }
+}
