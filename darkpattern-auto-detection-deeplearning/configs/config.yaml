@@ -1,0 +1,18 @@
+model:
+  pretrained: bert-base-uncased
+  dropout: 0.1
+
+train:
+  mode: not_cv
+  lr: 1e-5
+  batch_size: 128
+  epochs: 5
+  save_model: True
+  n_fold: 5
+  start_factor: 1.0
+
+preprocess:
+  max_length: 24
+
+random:
+  seed: 42

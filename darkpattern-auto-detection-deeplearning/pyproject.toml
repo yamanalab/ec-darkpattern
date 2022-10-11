@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "darkpattern_auto_detection_deeplearning"
+version = "0.1.0"
+description = ""
+authors = ["YadaYuki <yada.yuki@fuji.waseda.jp>"]
+
+[tool.poetry.dependencies]
+python = "3.9.0"
+requests = "^2.27.1"
+scikit-learn = "^1.0.2"
+torch = "^1.10.2"
+pytest = "^7.0.1"
+matplotlib = "^3.5.1"
+sklearn = "^0.0"
+torchtext = "^0.12.0"
+transformers = "^4.17.0"
+pandas = "1.2.0"
+hydra-core = "^1.1.1"
+wandb = "^0.12.21"
+
+[tool.poetry.dev-dependencies]
+mypy = "^0.931"
+isort = "^5.10.1"
+flake8 = "^4.0.1"
+black = "^22.1.0"
+types-requests = "^2.27.10"
+pyproject-flake8 = "^0.0.1-alpha.3"
+notebook = "^6.4.12"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
