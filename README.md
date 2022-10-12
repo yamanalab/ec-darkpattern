@@ -17,20 +17,20 @@ For more information, please check our [Paper]().
 
 ## Project Structure
 
-- `dataset/ `: [dataset.tsv]() in this directory is the dataset for text-based dark patterns automatic detection. 
+- `dataset/`: [dataset.tsv](https://github.com/yamanalab/ec-darkpattern/blob/master/dataset/dataset.tsv) in this directory is the dataset for text-based dark patterns automatic detection. 
 - `darkpattern-auto-detection-classical/`: Experimental code of baseline evaluation using classical NLP methods.
-- `darkpattern-auto-detection-deeplearning/ `: Experimental code of baseline evaluation using transformer-based pre-trained language models.
+- `darkpattern-auto-detection-deeplearning/`: Experimental code of baseline evaluation using transformer-based pre-trained language models.
 - `scraping/`: Code for collecting non-dark pattern texts in the dataset.
 
 ## Dataset
 
-[dataset/dataset.tsv]() is a text-based dataset for dark pattern automatic detection (TSV Format). Dark pattern texts were obtained from Mathur et al.’s study in 2019, which consists of 1,818 dark pattern texts from shopping sites. Then, we collect non-dark pattern texts on e-commerce sites by accessing and segmenting the sites targeted by the Mathur et al.'s study. 
+[dataset/dataset.tsv](https://github.com/yamanalab/ec-darkpattern/blob/master/dataset/dataset.tsv) is a text-based dataset for dark pattern automatic detection (TSV Format). Dark pattern texts were obtained from Mathur et al.’s study in 2019, which consists of 1,818 dark pattern texts from shopping sites. Then, we collect non-dark pattern texts on e-commerce sites by accessing and segmenting the sites targeted by the Mathur et al.'s study. 
 
-Scraping code for non-dark pattern texts is on [scraping/](). That is implemented using Typscript (Javascript) and Puppeteer.
+Scraping code for non-dark pattern texts is on [scraping/](https://github.com/yamanalab/ec-darkpattern/tree/master/scraping). That is implemented using Typscript (Javascript) and Puppeteer.
 
 ## Baseline Evaluation
 
-We conduct experiment of dark pattern auto detection using the dataset. The code is on [darkpattern-auto-detection-classical/]() (Classical NLP Methods) and [darkpattern-auto-detection-deeplearning/]() (Transformer-based pre-trained language models). 
+We conduct experiment of dark pattern auto detection using the dataset. The code is on [darkpattern-auto-detection-classical/](https://github.com/yamanalab/ec-darkpattern/tree/master/darkpattern-auto-detection-classical) (Classical NLP Methods) and [darkpattern-auto-detection-deeplearning/](https://github.com/yamanalab/ec-darkpattern/tree/master/darkpattern-auto-detection-deeplearning) (Transformer-based pre-trained language models). 
 
 #### Experimental Result of Classical NLP Methods
 
