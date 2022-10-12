@@ -35,8 +35,8 @@ $ export PYTHONPATH="$(pwd)"
 
 ## Train & Evaluate model
 
-You can run experiment, 5-fold cross validation, using GPU or CPU by running:
+You can run experiment using GPU or CPU by running:
 
 ```
-$ sh script/experiment.sh
+$ sh scripts/train.sh
 ```
