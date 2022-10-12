@@ -59,7 +59,7 @@ We conduct experiment of dark pattern auto detection using the dataset. The code
 
 This project is based on the Mathur et al.’s study and its [dataset](https://github.com/aruneshmathur/dark-patterns/blob/master/data/final-dark-patterns/dark-patterns.csv). We thank their authors for making the source code publically available.
 
-## Changes from Arunesh's Dataset
+## Changes from Mathur et al.’s Dataset
 
 - We extract text data from "Pattern String" column in [dark-patterns.csv](https://github.com/aruneshmathur/dark-patterns/blob/master/data/final-dark-patterns/dark-patterns.csv).
 - We ignored missing and duplicate text data.
