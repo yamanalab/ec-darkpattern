@@ -63,7 +63,3 @@ This project is based on the Mathur et al.’s study and its [dataset](https://g
 
 - We extract text data from "Pattern String" column in [dark-patterns.csv](https://github.com/aruneshmathur/dark-patterns/blob/master/data/final-dark-patterns/dark-patterns.csv).
 - We ignored missing and duplicate text data.
-
-## Citation
-
-## License
