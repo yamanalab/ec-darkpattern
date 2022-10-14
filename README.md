@@ -1,6 +1,7 @@
 <h1 style="text-align:center;"> Dark patterns in e-commerce: a dataset and its baseline evaluations </h1> 
 
-This repository provides the text-based dataset and experimental code for the paper: [Dark patterns in e-commerce: a dataset and its baseline evaluations]()
+<!-- This repository provides the text-based dataset and experimental code for the paper: [Dark patterns in e-commerce: a dataset and its baseline evaluations]() -->
+This repository provides the text-based dataset and experimental code for the paper: Dark patterns in e-commerce: a dataset and its baseline evaluations
 
 ## Overview
 
@@ -13,7 +14,7 @@ For baseline detection, we applied following two methods:
 - Classical NLP Methods ( Bag-of-Words + Classical Machine Learning Model )
 - Transformer-based pre-trained language models ( e.g. BERT )
 
-For more information, please check our [Paper]().
+<!-- For more information, please check our [Paper](). -->
 
 ## Project Structure
 
