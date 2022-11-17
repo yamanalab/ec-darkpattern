@@ -1,7 +1,14 @@
-<h1 style="text-align:center;"> Dark patterns in e-commerce: a dataset and its baseline evaluations </h1> 
+<div align="center">
 
-<!-- This repository provides the text-based dataset and experimental code for the paper: [Dark patterns in e-commerce: a dataset and its baseline evaluations]() -->
-This repository provides the text-based dataset and experimental code for the paper: Dark patterns in e-commerce: a dataset and its baseline evaluations
+# Dark patterns in e-commerce
+
+[Yuki Yada](https://www.yyada.jp/), Jiaying Feng, Tsuneo Matsumoto, Nao Fukushima, Fuyuko Kido, Hayato Yamana
+
+</div> 
+
+This repository provides the text-based dataset and experimental code for the paper: [Dark patterns in e-commerce: a dataset and its baseline evaluations](https://arxiv.org/abs/2211.06543) ( Accepted at **IEEE BigData 2022, 5th Workshop on Big Data for CyberSecurity (BigCyber-2022)** )
+
+
 
 ## Overview
 
