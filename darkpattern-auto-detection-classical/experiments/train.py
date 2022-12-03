@@ -4,28 +4,20 @@ import hydra
 import lightgbm as lgb
 import numpy as np
 import optuna
-from const.model import (
-    LIGHTGBM_MODEL,
-    LOGISTIC_REGRESSION_MODEL,
-    RANDOM_FOREST_MODEL,
-    SVC_MODEL,
-)
-from const.path import CONFIG_PATH, EQUILIBRIUM_DATASET_TSV_PATH
 from omegaconf import DictConfig
 from optuna.trial import FrozenTrial, Trial
 from sklearn.base import BaseEstimator
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.linear_model import LogisticRegression
-from sklearn.metrics import (
-    accuracy_score,
-    f1_score,
-    precision_score,
-    recall_score,
-    roc_auc_score,
-)
+from sklearn.metrics import (accuracy_score, f1_score, precision_score,
+                             recall_score, roc_auc_score)
 from sklearn.model_selection import StratifiedKFold, cross_validate
 from sklearn.svm import SVC
+
+from const.model import (LIGHTGBM_MODEL, LOGISTIC_REGRESSION_MODEL,
+                         RANDOM_FOREST_MODEL, SVC_MODEL)
+from const.path import CONFIG_PATH, DATASET_TSV_PATH
 from utils import dataset
 from utils.random_seed import set_random_seed
 
@@ -67,7 +59,7 @@ def run_lightgbm(
     study: optuna.Study, n_trial: int = 100, random_state: int = 42
 ) -> None:
 
-    texts, labels = dataset.get_dataset(EQUILIBRIUM_DATASET_TSV_PATH)
+    texts, labels = dataset.get_dataset(DATASET_TSV_PATH)
     count_vectorizer = CountVectorizer(ngram_range=(1, 1), dtype=np.float32)
     X, y = (
         count_vectorizer.fit_transform(texts),
@@ -181,7 +173,7 @@ def run_sklearn(
 ) -> None:
     def objective(trial: Trial) -> Union[float, Sequence[float]]:
 
-        texts, labels = dataset.get_dataset(EQUILIBRIUM_DATASET_TSV_PATH)
+        texts, labels = dataset.get_dataset(DATASET_TSV_PATH)
 
         count_vectorizer = CountVectorizer(ngram_range=(1, 1))
 
@@ -199,7 +191,7 @@ def run_sklearn(
 
     def detailed_objective(trial: FrozenTrial) -> None:
 
-        texts, labels = dataset.get_dataset(EQUILIBRIUM_DATASET_TSV_PATH)
+        texts, labels = dataset.get_dataset(DATASET_TSV_PATH)
 
         count_vectorizer = CountVectorizer(ngram_range=(1, 1))
 

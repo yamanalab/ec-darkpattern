@@ -141,4 +141,5 @@ cython_debug/
 # data/
 
 outputs
-pickles/
+
+multirun/
