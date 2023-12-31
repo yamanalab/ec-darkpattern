@@ -23,7 +23,7 @@ For baseline detection, we applied following two methods:
 - Classical NLP Methods ( Bag-of-Words + Classical Machine Learning Model )
 - Transformer-based pre-trained language models ( e.g. BERT )
 
-<!-- For more information, please check our [Paper](). -->
+For more information, please check our [Paper](https://arxiv.org/abs/2211.06543).
 
 ## Project Structure
 
