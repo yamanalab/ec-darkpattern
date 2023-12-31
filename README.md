@@ -1,6 +1,6 @@
 <div align="center">
 
-# Dark patterns in e-commerce
+# Dark patterns in e-commerce:<br /> a dataset and its baseline evaluations
 
 [Yuki Yada](https://www.yyada.jp/), Jiaying Feng, Tsuneo Matsumoto, Nao Fukushima, Fuyuko Kido, Hayato Yamana
 
