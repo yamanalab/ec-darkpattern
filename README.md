@@ -8,8 +8,6 @@
 
 This repository provides the text-based dataset and experimental code for the paper: [Dark patterns in e-commerce: a dataset and its baseline evaluations](https://arxiv.org/abs/2211.06543) 
 
-Accepted at **IEEE BigData 2022, 5th Workshop on Big Data for CyberSecurity (BigCyber-2022)**
-
 
 
 ## Overview
